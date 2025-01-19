@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://media.istockphoto.com/id/531072525/vector/terrified-little-goat.jpg?s=612x612&w=0&k=20&c=YeFHkae7mW28qbDiKeDEe-rO3Kl5j6h9hbs1Fn8Wi9E=);
+    background-color: #ffbb62;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+#outer-frame {
+    background-color: #ffbb6277;
+    margin: auto 20px;
+    padding: 10px;
+    border: solid 2px #ffa530;
+}
+
+fieldset {
+    border: none;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+label {
+    display: block;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
