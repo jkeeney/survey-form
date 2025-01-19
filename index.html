@@ -11,10 +11,39 @@
       <p id="description">Tell us why goats are the best.</p>
       <form id="survey-form">
         <fieldset>
-          <label id="name-label" for="name">Goat Lover's Name: <input id="name" type="text" required /></label>
-          <label id="email-label" for="email">Goat Lover's Email: <input id="email" type="email" required /></label>
-          <label id="number-label" for="number">Number of Goats Owned (8 goat minimum): <input id="number" type="number" min="8" max="1000" required /></label>
+          <label id="name-label" for="name">Goat Lover's Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label" for="email">Goat Lover's Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label" for="number">Number of Goats Owned: <input id="number" type="number" min="8" max="1000" placeholder="Enter number from 8 to 1000" required /></label>
         </fieldset>
+        <fieldset>
+          <label id="dropdown-label" for="dropdown">How many more goats do you want to own?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">20 goats</option>
+              <option value="2">200 goats</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Is 50 goats enough?</legend>
+          <label for="yes"><input id="yes" type="radio" class="enough" name="enough" value="1" />Yes</label>
+          <label for="no"><input id="no" type="radio" class="enough" name="enough" value="2" checked />No</label>
+        </fieldset>
+        <fieldset>
+          <legend>What color goats do you have?</legend>
+          <label for="white"><input id="white" name="color" class="color" type="checkbox" value="1" />White</label>
+          <label for="brown"><input id="brown" name="color" class="color" type="checkbox" value="2" />Brown</label>
+          <label for="black"><input id="black" name="color" class="color" type="checkbox" value="3" />Black</label>
+          <label for="other"><input id="other" name="color" class="color" type="checkbox" value="4" />Other</label>
+        </fieldset>
+        <fieldset>
+          <label for="love">Tell us why you love goats:
+            <textarea id="love" name="love" rows="3" cols="30" placeholder="I love their beautiful crazy eyes and ..."></textarea>
+          </label>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+
       </form>
     </div>
     
